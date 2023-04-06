@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: "Klee One";
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #93c572 70%, #c8ebb1 30%);
+    position: relative;
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    top: 0;
+    right: 30%;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    padding-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+nav ul li {
+    margin: 0 0.3125rem;
+}
+
+nav ul li a {
+    padding: 0rem 1.25rem;
+    text-decoration: none;
+    font-size: 1.0625rem;
+    font-weight: bold;
+    color: #494324;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1.25rem;
+    background-color: #c8ebb1;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+nav ul li a:hover:after {
+    height: 100%;
+}
+
+.main-content {
+    width: 60%;
+    padding-top: 6.25rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-greener,
+.main-text {
+    flex-basis: 50%;
+}
+
+.img-greener img {
+    width: 100%;
+}
+
+.main-content h1 {
+    font-size: 3.75rem;
+    letter-spacing: 0.0625rem;
+    color: #494324;
+}
+
+.main-content p {
+    margin-top: 0.625rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0.0625rem;
+}
+
+.main-content button {
+    margin-top: 2.5rem;
+    outline: none;
+    border: none;
+    font-size: 1.125rem;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0 50% 50% 0;
+    background-color: #494324;
+    color: #fff;
+}
+
+.swiper {
+    width: 20rem;
+}
+
+.swiper-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    position: absolute;
+    /* right: 8%; */
+    right: 2.5%;
+    bottom: 20%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    margin-top: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: -0.3125rem 0.3125rem 1.0625rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.image:hover {
+    background: rgba(73, 66, 52, 0.7);
+}
+
+.image img {
+    width: 70%;
+}
+
+.inner-box {
+    margin: 1.5rem 0 0 1rem;
+}
+
+.inner-box p {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.soc-links {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.soc-links i{
+    margin-left: 0.625rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 50%;
+    background-color: #93c572;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.soc-links i:hover {
+    transform: translateY(-0.3125rem);
+    background-color: #494324;
+    color: #93c572;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Greener</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="blob">
+            <img src="media/bg.png">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Blog & FAQ</a></li>
+            </ul>
+            <img class="logo" src="media/logo_transparent.png">
+        </nav>
+
+        <div class="main-content">
+            <div class="img-greener">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="media/img-1.png"></div>
+                        <div class="swiper-slide"><img src="media/img-2.png"></div>
+                        <div class="swiper-slide"><img src="media/img-3.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-text">
+                <h1>Greener</h1>
+                <p>The perfect plant decor for any environment.</p>
+                <button>See More</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="box">
+                <div class="image">
+                    <img src="media/img-4.png">
+                </div>
+                <div class="inner-box">
+                    <h3>Environmental Friendly</h3>
+                    <p>The best for whatever space.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="media/img-5.png">
+                </div>
+                <div class="inner-box">
+                    <h3>Best Prices</h3>
+                    <p>Best value for price.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="media/img-6.png">
+                </div>
+                <div class="inner-box">
+                    <h3>100% Organic</h3>
+                    <p>All plants are grown under the best conditions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="soc-links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
